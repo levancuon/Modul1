@@ -7,34 +7,47 @@
 <body>
 <table border="1">
     <tr>
-        <td colspan="4"><p id="a"></p></td>
+        <td colspan="4"><p id="a" ></p></td>
     </tr>
     <tr>
-       <td><button id="1" value="1" onclick="aa();">1</button></td>
-        <td><button id="2" value="2" onclick="bb();">2</button></td>
-        <td><button id="3" value="3" onclick="cc();">3</button></td>
-        <td> <button id="b" value="" onclick="cc();">+</button></td>
+       <td><button id="1" value="1" onclick="getData(event);">1</button></td>
+        <td><button id="2" value="2" onclick="getData(event);">2</button></td>
+        <td><button id="3" value="3" onclick="getData(event);">3</button></td>
+        <td> <button id="b" value="+" onclick="getData(event);">+</button></td>
     </tr>
     <tr>
-    <td> <button id="4" value="4" onclick="dd();">4</button></td>
-    <td> <button id="5" value="5" onclick="ee();">5</button></td>
-    <td>  <button id="6" value="6" onclick="ff();">6</button></td>
-    <td>  <button id="c" value="" onclick="gg();">-</button></td>
+    <td> <button id="4" value="4" onclick="getData(event);">4</button></td>
+    <td> <button id="5" value="5" onclick="getData(event);">5</button></td>
+    <td>  <button id="6" value="6" onclick="getData(event);">6</button></td>
+    <td>  <button id="c" value="-" onclick="getData(event);">-</button></td>
     </tr>
     <tr>
-        <td>  <button id="7" value="7" onclick="hh();">7</button></td>
-        <td>  <button id="8" value="8" onclick="ii();">8</button></td>
-        <td>  <button id="9" value="9" onclick="jj();">9</button></td>
-        <td>  <button id="d" value="" onclick="kk();">x</button></td>
+        <td>  <button id="7" value="7" onclick="getData(event);">7</button></td>
+        <td>  <button id="8" value="8" onclick="getData(event);">8</button></td>
+        <td>  <button id="9" value="9" onclick="getData(event);">9</button></td>
+        <td>  <button id="d" value="*" onclick="getData(event);">x</button></td>
     </tr>
     <tr>
-    <td>  <button id="10" value="" onclick="ll();">c</button></td>
-    <td> <button id="11" value="0" onclick="m();">0</button></td>
-    <td>   <button id="12" value="" onclick="nn();">=</button></td>
-    <td>  <button id="13" value="" onclick="oo();">/</button></td>
+    <td>  <button  id="10" value="" onclick="xoa();">C</button></td>
+    <td> <button id="11" value="0" onclick="getData(event);">0</button></td>
+    <td>   <button id="12" value="=" onclick="tinh();">=</button></td>
+    <td>  <button id="13" value="/" onclick="getData(event);">/</button></td>
     </tr>
     <script>
-        function
+        let pheptinh='';
+        function getData(event) {
+            let a = event.target.value;
+            pheptinh +=a;
+            document.getElementById('a').innerHTML = pheptinh;
+        }
+        function xoa(){
+            pheptinh = '';
+            document.getElementById('a').innerHTML= pheptinh;
+        }
+       function tinh() {
+            let ketqua = eval(pheptinh);
+            document.getElementById('a').innerHTML=ketqua;
+       }
     </script>
 </table>
 </body>

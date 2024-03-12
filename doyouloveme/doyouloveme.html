@@ -2,25 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        div{
-            margin: 20% 50%;
-            width: 20%;
-        }
-    </style>
+    <title>Hello</title>
 </head>
+<style>
+    div {
+        margin-top:250px;
+        text-align: center;
+    }
+    body {
+        background-image: url"";
+    }
+</style>
 <body>
+
 <div>
-    <H1>Do you hate me</H1>
-    <button onmouseover="yes()" style="position: relative" id="yes">yes</button>
-    <button>NO</button>
+    <h1>DO YOU HATE ME ?</h1>
+    <button onmouseover="yes()" style="position: relative" id="yes">YES</button>
+    <button onclick="no()">NO</button>
 </div>
 <script>
-    function yes(){
-        document.getElementById('yes').style.top= Math.random() * window.innerHeight + "px";
-        document.getElementById('yes').style.top= Math.random() * window.innerWidth + "px";
+    function yes() {
+        document.getElementById('yes').style.top = Math.random() * window.innerHeight + "px"; // 0 - 0.99
+        document.getElementById('yes').style.left = Math.random() * window.innerWidth + "px";
     }
+
+    function no() {
+        alert("HEHE. I HATE YOU");
+    }
+
 </script>
 </body>
 </html>
