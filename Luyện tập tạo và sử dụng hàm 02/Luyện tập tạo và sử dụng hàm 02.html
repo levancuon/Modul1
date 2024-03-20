@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Bài 1: Viết hàm tính bình phương của một số bất kỳ được đưa vào.-->
+<!--Gọi hàm vừa xây dựng được.-->
+<!--Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn.-->
+<!--Gọi hàm vừa xây dựng được-->
+<!--Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào.-->
+<!--Gọi hàm vừa xây dựng được.-->
+<!--Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không.-->
+<!--Nếu là ký tự số hàm trả về true, ngược lại trả về false.-->
+<!--Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị-->
+<!--nhỏ nhất.-->
+<!--Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải-->
+<!--là nguyên dương không. Nếu là nguyên dương trả về true, ngược lại trả về false.-->
+<!--Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai-->
+<!--số nguyên đó.-->
+<!--Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng-->
+<!--số nguyên đó.-->
+<!--Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ,-->
+<!--kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không. Nếu có trả-->
+<!--về số lần xuất hiện của ký tự đó, nếu không trả về -1.-->
+<body>
+<script>
+    // bai 1
+    /* function avg(a,b){
+        let result=(a+b)/2;
+        return result;
+    }
+    let a = +prompt('a');
+    let b = +prompt('b');
+    document.write(avg(a,b))
+     */
+
+    //bai 2
+    /*let pi = 3.14
+    function chuvihinhtron(bankinh){
+        let chuvi = 2*pi*bankinh;
+        return chuvi;
+    }
+    function dientichhinhtron(bankinh){
+        let dientich = pi*bankinh*bankinh;
+        return dientich;
+    }
+    let bankinh = +prompt('ban kinh')
+    document.write('chu vi  = ' +chuvihinhtron(bankinh)+'<br>');
+    document.write('dien tich = '+dientichhinhtron(bankinh))
+
+     */
+
+    //bai 3
+    /*function giaithua(a){
+        let g = 1;
+        for (let i = 1; i <= a; i++) {
+            g = g*i;
+        } return g
+    }
+    let a = +prompt('a');
+    document.write(giaithua(a));
+
+     */
+
+    //bai 4
+    /* function check(str){
+         let result="";
+         if (isNaN(str)===false){
+             result = "true"
+             return result
+         } else {
+             result= "false"
+             return result
+         }
+     }
+     let str = prompt('nhap ky tu');
+     document.write(check(str));
+
+     */
+
+    //bai 5
+    /*function numMin(a,b,c){
+        let result;
+        if (a > b && a > c){
+            result = a;
+            return result;
+        } else if (b>c){
+            result = b;
+            return result;
+        } else {
+            result = c;
+            return result
+        }
+    }
+    let a = +prompt('a');
+    let b = +prompt('b');
+    let c = +prompt('c');
+    document.write('so nho nhat la '+numMin(a,b,c))
+
+     */
+
+    //bai 6
+    /*function checkNum(a) {
+        let result ;
+        if (a > 0) {
+            result = 'true';
+            return result
+        } else if (a === 0) {
+            result = '0 la 0 ko co nhung';
+            return result;
+        } else {
+            result = 'false';
+            return result;
+        }
+    }
+    let a = +prompt('a');
+    document.write(checkNum(a));
+
+     */
+
+    //bai 7
+    /*function changePositionNum(a,b){
+        let result ;
+        let c='';
+        result = c+b+a;
+        return  result
+    }
+    let a=+prompt('a');
+    let b=+prompt('b');
+    document.write(changePositionNum(a,b))
+
+     */
+
+    //bai 8
+    /* function daonguoc(arr){
+        let result
+        let first = 0;
+        let last = arr.length-1;
+        while (first<last){
+            let a = arr[first];
+            arr[first] = arr[last];
+            arr[last] = a;
+            first++;
+            last--
+        } result = arr
+           return result
+    }
+    let arr = []
+    let strLength = +prompt('độ dài mảng')
+    for (let i = 0; i < strLength; i++) {
+        a = +prompt('nhap so nguyen')
+        arr.push(a)
+    }
+    document.write(daonguoc(arr))
+
+     */
+
+    //bai 9
+    /*function checkkytu(arr, y) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (y === arr[i]) {
+                count++
+            }
+        }
+        return count;
+    }
+    let kytu;
+    let arr = [];
+    let strLength = +prompt('độ dài mảng');
+    for (let i = 0; i <strLength; i++) {
+        kytu = prompt('nhap phan tu mang');
+        arr.push(kytu);
+    }
+    let y = prompt('nhap ky tu kiem tra');
+    document.write(checkkytu(arr, y));
+     */
+</script>
+</body>
+</html>
