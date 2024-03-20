@@ -8,12 +8,14 @@
 <script>
     let a = 0;
     let b = 1;
-    for (i = 0; i <= 20; i++ ){
-        let fob = a+b;
-         a = b;
+    let c = 0;
+    for (i=1;i<=20;i++){
+        let fob = a + b;
+        a = b;
         b = fob;
-        document.write(fob+"<br>");
+        c += fob;
     }
+    document.write('tong='+c);
 </script>
 </body>
 </html>

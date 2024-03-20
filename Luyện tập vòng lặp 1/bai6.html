@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // CÁCH 1
+    /* let a = 7 ;
+    for (i=0;i<=30;i++){
+        let tong = a+7;
+        a = tong;
+    } document.write(a);
+
+     */
+
+    // CÁCH 2
+    let tong = 0;
+    for (i=0;i<=210;i++){
+        if(i%7 === 0){
+            tong += i;
+            document.write('<br>'+tong);
+        }
+    }document.write('tổng = '+tong);
+
+</script>
+</body>
+</html>

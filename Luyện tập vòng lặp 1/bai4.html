@@ -6,13 +6,16 @@
 </head>
 <body>
 <script>
-    let a = 0;
+    let a = 1;
     let b = 1;
-    for (i = 0; i <= 20; i++ ){
+    for (i = 1; i <= 20; i++ ){
         let fob = a+b;
-         a = b;
+        a = b;
         b = fob;
-        document.write(fob+"<br>");
+        if (fob%5 === 0 ){
+            document.write(fob+"<br>");
+            break;
+        }
     }
 </script>
 </body>

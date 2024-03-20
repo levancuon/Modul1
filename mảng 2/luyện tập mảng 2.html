@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 1: Viết chương trình khởi tạo mảng 2 chiều, gồm một bộ các phần tử
+    //có sẵn,  in ra các phần tử trong mảng. Chú ý: Sử dụng vòng lặp for lồng
+    //nhau
+
+    /*let mang = [
+        [1, 2, 1, 24],
+    [8, 11, 9, 4],
+    [7, 0, 7, 27],
+    [7, 4, 28, 14],
+    [3, 10, 26, 7]
+    ]
+    for (let i = 0; i < mang.length; i++) {
+        for (let j = 0; j < mang[i].length; j++) {
+            console.log('rol '+i+'='+mang[i][j])
+        }
+    }
+
+     */
+
+    //Bài 2: Viết một chương trình để in các ký tự trong một mảng theo thứ
+    // tự đảo ngược. Ví dụ, nếu một mảng chứa các ký tự
+    // [ 'c', 's', 'c', '2', '6', '1' ] sau khi thực hiện đảo ngược sẽ
+    // là "162csc"
+
+    /*let a = ['c', 's', 'c', '2', '6', '1'];
+    let b = "";
+    a.sort(function () {
+        return -1;
+    });
+    for (let i = 0; i < a.length; i++) {
+        console.log(a[i])
+        b += a[i]
+    }
+    console.log(b)
+     */
+    // cách 2
+    /*let a = ['c', 's', 'c', '2', '6', '1'];
+    a.sort(function () {return -1;});
+    console.log(a.join(""))
+
+     */
+
+    //Bài 3: Viết một chương trình khai báo một mảng ký tự và kích thước
+    // của mảng. Chương trình này đếm số ký tự số trong mảng.
+
+    /*let a = [
+       ['c', 's', 'c', '2', '6', '1'],
+       [1,5,6,9],
+   ]
+
+   for (let i = 0; i < a.length; i++) {
+       let b=0;
+       for (let j = 0; j < a[i].length; j++) {
+           if (isNaN(a[i][j])===true){
+            b+=1;
+           }
+           console.log(a[i][j])
+       }console.log(a[i]);
+      console.log('Số phần tử của mảng a'+i+' = '+a[i].length);
+      console.log('Số phần tử là số của mảng a'+i+' = '+b);
+   }
+
+     */
+
+
+
+    //Bài 4: Viết một chương trình để đếm số từ trong một chuỗi
+
+    /*let a  = "học với chả hành"
+    let b =[];
+    a.split("");
+    console.log(a)
+    for (let i = 0; i < a.length; i++) {
+        if(a[i]===(" ")){
+            b+=1
+        }
+    }
+
+     */
+
+
+    //Bài 5: Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra
+    // xem hai chuỗi có giống nhau hay không.
+
+
+    /*let b = [];
+    let c = [];
+    let s = 0;
+    for (let i = 0; i < 3; i++) {
+        let a = prompt('nhập chuỗi a');
+        b.push(a)
+    } console.log(b)
+    for (let i = 0; i < 3; i++) {
+        let d = prompt("nhập chuỗi b");
+        c.push(d)
+    }console.log(c)
+    for (let i = 0; i < b.length; i++) {
+        if (b[i]=== c[i]){
+            s += 1
+        }
+    }
+    if (s===3){
+        console.log("giống")
+    }else {
+        console.log('ko giống')
+    }
+
+     */
+
+    /*let a = prompt('chuỗi a')
+    let b = prompt('chuỗi b')
+    if (a.length === b.length) {
+        chuoilength = true;
+    } else {
+        chuoilength = false;
+    }
+    let count = 0;
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] === b[i]) {
+            count++;
+        }
+    }
+    if(chuoilength===true && count===a.length){
+        console.log("giống");
+    }else{
+        console.log('khác');
+    }
+
+     */
+    let a = prompt('chuỗi a')
+    let b = prompt('chuỗi b')
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] !== b[i]){
+            ccc= true
+        } else {ccc=false}
+    }
+    if (a.length===b.length){
+        chuoilength=true;
+    }else{
+        chuoilength=false;
+    }
+
+    //Bài 6: Viết chương trình nhập vào một mảng ký tự, tìm tất cả các
+    // ký tự trong mảng là (-) và thay thế các ký tự này bởi ký tự ( _ )
+
+
+</script>
+</body>
+</html>

@@ -6,14 +6,12 @@
 </head>
 <body>
 <script>
-    let a = 0;
+    let a = prompt('nhập số');
     let b = 1;
-    for (i = 0; i <= 20; i++ ){
-        let fob = a+b;
-         a = b;
-        b = fob;
-        document.write(fob+"<br>");
-    }
+    for (i = 1; i <= a; i++) {
+        b=b*i;
+    } document.write('tich = ' +b);
+
 </script>
 </body>
 </html>
