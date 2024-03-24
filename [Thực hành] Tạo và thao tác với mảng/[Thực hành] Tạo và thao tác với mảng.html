@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>Sample Screen</h1>
+<body>
+<input type="text" id="getData">
+<button onclick="add_element_to_array()">Add</button>
+<button onclick="display_new_element()">Display</button>
+<div id="result"></div>
+<script>
+    let x = 0;
+    let arr = [];
+
+    function add_element_to_array() {
+        arr[x] = document.getElementById('getData').value;
+        alert('phần tử ' + arr[x] + 'được thêm vào vị trí ' + x);
+        x++;
+        document.getElementById("getData").value = "";
+    }
+    function display_new_element() {
+        e = '<hr>'
+        for (let i = 0; i < arr.length; i++) {
+            e += 'vị trí ' + i + ':' + arr[i] + '<br>'
+        }
+        document.getElementById('result').innerHTML = e
+    }
+</script>
+</body>
+</html>
+
+
+<!--<input type="text" id="txtValue"/>-->
+<!--<input type="button" id="btnAdd" value="Add" onclick="add_element_to_array();"/>-->
+<!--<input type="button" id="btnDisplay" value="Display" onclick="display_array();"/>-->
+<!--<div id="result"></div>-->
+<!--<script>-->
+<!--    let x = 0;-->
+<!--    let array = [];-->
+<!--    function add_element_to_array() {-->
+<!--        array[x] = document.getElementById("txtValue").value;-->
+<!--        alert("Phần tử: " + array[x] + " Được thêm vào vị trí " + x);-->
+<!--        x++;-->
+<!--        document.getElementById("txtValue ").value = "";-->
+<!--    }-->
+<!--    function display_array() {-->
+<!--        let e = "<hr>";-->
+<!--        for (let i = 0; i < array.length; i++) {-->
+<!--            e += "Element " + i + " = " + array[i] + "<br/>";-->
+<!--        }-->
+<!--        document.getElementById("result").innerHTML = e;-->
+<!--    }-->
+<!--</script>-->

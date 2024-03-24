@@ -82,10 +82,10 @@
     //bai 5
     /*function numMin(a,b,c){
         let result;
-        if (a > b && a > c){
+        if (a < b && a < c){
             result = a;
             return result;
-        } else if (b>c){
+        } else if (b<c){
             result = b;
             return result;
         } else {
@@ -97,7 +97,6 @@
     let b = +prompt('b');
     let c = +prompt('c');
     document.write('so nho nhat la '+numMin(a,b,c))
-
      */
 
     //bai 6
@@ -132,8 +131,10 @@
 
      */
 
+
+
     //bai 8
-    /* function daonguoc(arr){
+    /*function daonguoc(arr){
         let result
         let first = 0;
         let last = arr.length-1;
@@ -156,29 +157,38 @@
 
      */
 
+
+
     //bai 9
-    /*function checkkytu(arr, y) {
+    function kiemtralap(arr, y) {
         let count = 0;
         for (let i = 0; i < arr.length; i++) {
-            if (y === arr[i]) {
+            if (y == arr[i]) {
                 count++;
-            } else {
-                count = -1;
             }
+        }  if (count>0){
+            return count;
+        }else {
+            return -1;
         }
-        return count;
     }
-    let kytu;
-    let arr = [];
-    let strLength = +prompt('độ dài mảng');
-    for (let i = 0; i <strLength; i++) {
-        kytu = prompt('nhap phan tu mang');
-        arr.push(kytu);
-    }
-    let y = prompt('nhap ky tu kiem tra');
-    document.write(checkkytu(arr, y));
+    a = [1,1,'a','a','c',2,1];
+    y = 'a';
+    console.log(kiemtralap(a,y))
+    // let kytu;
+    // let arr = [];
+    // let strLength = +prompt('độ dài mảng');
+    // for (let i = 0; i <strLength; i++) {
+    //     kytu = prompt('nhap phan tu mang');
+    //     arr.push(kytu);
+    // }
+    //     console.log(arr)
+    // let y = prompt('nhap ky tu kiem tra');
+    // document.write(kiemtralap(arr, y));
 
-     */
+
+
+
 
 </script>
 </body>

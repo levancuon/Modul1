@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // class cat{
+    // color;
+    // name;
+    // gender;
+    // action;
+    // constructor(colorInp, nameInp,genderInp,actionInp){
+    //     this.color = colorInp;
+    //     this.name = nameInp;
+    //     this.gender = genderInp;
+    //     this.action = actionInp;
+    // }
+    // }
+    class Rectangle {
+
+        constructor(lengthInput,widthInput) {
+            this.length = lengthInput;
+            this.width = widthInput;
+
+        }
+        area(){
+            return this.width*this.length
+        }
+        chuvi(){
+            return 2*(this.width+this.length)
+        }
+    }
+    let HCN= new Rectangle(10,20)
+    document.write('chiều dài ban đầu = '+HCN.length+'<br>')
+    document.write('chiều rộng ban đầu = '+HCN.width+'<br>')
+    HCN.length = 30;
+    document.write('chiều dài thay đổi = '+HCN.length+'<br>')
+    HCN.width = 20;
+    document.write('chiều rộng thay đổi = '+HCN.width+'<br>')
+    document.write('diện tích = '+HCN.area()+'<br>')
+    document.write('chu vi = '+HCN.chuvi())
+</script>
+</body>
+</html>
