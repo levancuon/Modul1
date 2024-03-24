@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<h1>Sample Screen</h1>
 <body>
-<input type="text" id="getData">
-<button onclick="add_element_to_array()">Add</button>
-<button onclick="display_new_element()">Display</button>
-<div id="result"></div>
-<script>
-    let x = 0;
-    let arr = [];
 
-    function add_element_to_array() {
-        arr[x] = document.getElementById('getData').value;
-        alert('phần tử ' + arr[x] + 'được thêm vào vị trí ' + x);
-        x++;
-        document.getElementById("getData").value = "";
+<h1>Sample Screen</h1>;
+<input type="text" id="value">
+<button onclick="add()">add</button>
+<button onclick="display()">display</button>
+<p id="show"></p>
+<script>
+
+    let arr = [];
+    let count = 0;
+    function add() {
+        arr[count] = document.getElementById('value').value;
+        count++
+        document.getElementById('value').value = '';
     }
-    function display_new_element() {
-        e = '<hr>'
+    function display(){
+        let e = '<hr>'
         for (let i = 0; i < arr.length; i++) {
-            e += 'vị trí ' + i + ':' + arr[i] + '<br>'
-        }
-        document.getElementById('result').innerHTML = e
+         e += 'element '+arr[i] +'<br>';
+    }
+        document.getElementById('show').innerHTML= e ;
     }
 </script>
+
 </body>
 </html>

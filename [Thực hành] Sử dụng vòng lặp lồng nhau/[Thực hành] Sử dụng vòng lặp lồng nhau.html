@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table id="bcc" border="1" style="border-collapse: collapse"></table>
+    <script>
+        let tr = '';
+        for (let i = 1; i <=10; i++) {
+             tr += '<tr>'
+            for (let j = 1; j <=10; j++) {
+                tr += `<td> ${i * j} </td>`
+            } tr += '</tr>'
+        }
+        document.getElementById('bcc').innerHTML= tr;
+    </script>
+
+</body>
+</html>
