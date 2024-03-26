@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Bài 1: Viết chương trình khởi tạo mảng 2 chiều, gồm một bộ các phần tử có sẵn,
+in ra các phần tử trong mảng. Chú ý: Sử dụng vòng lặp for lồng nhau
+Ví dụ mảng sau:
+Bài 2: Viết một chương trình để in các ký tự trong một mảng theo thứ tự đảo
+ngược. Ví dụ, nếu một mảng chứa các ký tự [ 'c', 's', 'c', '2', '6', '1' ]
+sau khi thực hiện đảo ngược sẽ là "162csc"
+
+Bài 3: Viết một chương trình khai báo một mảng ký tự và kích thước của mảng.
+Chương trình này đếm số ký tự số trong mảng.
+
+Bài 4: Viết một chương trình để đếm số từ trong một chuỗi
+
+Bài 5: Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi
+có giống nhau hay không.
+
+Bài 6: Viết chương trình nhập vào một mảng ký tự, tìm tất cả các ký tự trong
+mảng là (-) và thay thế các ký tự này bởi ký tự ( _ )
+<script>
+    // bai 1
+    /*let a = [
+        [1, 2, 1, 24],
+        [8, 11, 9, 4],
+        [7, 0, 7, 27],
+        [7, 4, 28, 14],
+        [3, 10, 26, 7]
+    ];
+for (let i = 0; i < a.length-1; i++) {
+    console.log(`row ${i}`)
+    for (let j = 0; j <= a[i].length; j++) {
+        console.log(a[j][i])
+    }
+}
+
+     */
+    // bai 2
+    /*let arr = [ 'c', 's', 'c', '2', '6', '1' ];
+    let first = 0;
+    let last = arr.length-1;
+    for (let i = 0; i < arr.length; i++) {
+        if (first<last){
+         num = arr[first]
+        arr[first]=arr[last]
+        arr[last]=num;
+        first++;
+        last--;
+        }
+} console.log(arr)
+
+     */
+    //bai 3
+    /*function show_info_arr(arr){
+        console.log(arr)
+        console.log('mang co '+arr.length+' ky tu')
+    }
+
+    let a = [1,6,3,7]
+    show_info_arr(a)
+
+     */
+    //bai 4
+    /*let str = 'a4a5aa';
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i]%1===0){
+            count++
+        }
+    } let numStr = str.length - count;
+    console.log(numStr)
+
+     */
+
+    //bai 5
+    /*let arr1 = [1, 2, 3, 'a', 'b', 4]
+    let arr2 = [1, 2, 3, 'a', 'b', 4, "a"]
+    check(arr1, arr2)
+    function check(a, b) {
+        count = 0;
+        if (a.length === b.length) {
+            for (let i = 0; i < a.length; i++) {
+                if (a[i] === b[i]) {
+                    count++
+                }
+            }
+            if (count === a.length) {
+                console.log('giong nhau')
+            } else {
+                console.log('ko giong nhau')
+            }
+        } else {
+            console.log('ko giống nhau')
+        }
+    }
+
+     */
+    // bai 6
+    /* let arr = [1, 2, 3, '-', 'b', 4, '-']
+    check(arr)
+
+    function check(a) {
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] === '-') {
+                a[i] = '_'
+            }
+        }
+        console.log(a)
+    }
+
+     */
+
+
+</script>
+</body>
+</html>
